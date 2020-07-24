@@ -1,0 +1,7 @@
+public
+static
+.cache
+content
+/.git
+/.vscode
+node_modules

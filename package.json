@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "benmart",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Benjamin J. Martinez personal blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Benjamin J. Mtz <benjaminjmtz@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/cruznick/benmart/issues"
   },
   "dependencies": {
     "gatsby": "^2.23.12",
@@ -33,12 +33,36 @@
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "dotenv": "^8.0.0",
+    "eslint": "^6.0.1",
+    "gatsby-plugin-robots-txt": "^1.4.0",
+    "gatsby-plugin-sass": "^2.1.0",
+    "gatsby-plugin-sitemap": "^2.2.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.12.0",
+    "normalize-scss": "^7.0.1",
+    "poly-fluid-sizing": "^1.1.0",
+    "prop-types": "^15.7.2",
+    "react-burger-menu": "^2.6.10",
+    "react-icons": "^3.7.0",
+    "react-image-lightbox": "^5.1.0",
+    "react-responsive-masonry": "^2.0.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "eslint-config-gatsby-standard": "^2.2.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.18.2",
+    "standard": "^13.0.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/cruznick/benmart/#readme",
   "keywords": [
     "gatsby"
   ],

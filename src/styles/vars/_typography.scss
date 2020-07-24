@@ -1,0 +1,147 @@
+html {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-display: auto;
+  font-size: 90%;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-display: auto;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+  font-weight: normal;
+  color: $fontColor;
+}
+
+h1 {
+  display: block;
+  @include poly-fluid-sizing(
+    'font-size',
+    (
+      320px: 14px,
+      768px: 20px,
+      1024px: 26px,
+      1440px: 32px,
+    )
+  );
+}
+h2 {
+  display: block;
+  @include poly-fluid-sizing(
+    'font-size',
+    (
+      320px: 12px,
+      768px: 18px,
+      1024px: 24px,
+      1440px: 30px,
+    )
+  );
+}
+h3 {
+  display: block;
+  @include poly-fluid-sizing(
+    'font-size',
+    (
+      320px: 10px,
+      768px: 16px,
+      1024px: 22px,
+      1440px: 28px,
+    )
+  );
+}
+h4 {
+  display: block;
+  @include poly-fluid-sizing(
+    'font-size',
+    (
+      320px: 10px,
+      768px: 14px,
+      1024px: 20px,
+      1440px: 24px,
+    )
+  );
+}
+h5 {
+  display: 40lock;
+  @include poly-fluid-sizing(
+    'font-size',
+    (
+      320px: 8px,
+      768px: 10px,
+      1024px: 12px,
+      1440px: 18px,
+    )
+  );
+}
+h6 {
+  display: block;
+  @include poly-fluid-sizing(
+    'font-size',
+    (
+      320px: 8px,
+      768px: 10px,
+      1024px: 12px,
+      1440px: 16px,
+    )
+  );
+}
+p {
+  margin: $small-spacing;
+  @include poly-fluid-sizing(
+    'font-size',
+    (
+      320px: 8px,
+      768px: 10px,
+      1024px: 12px,
+      1440px: 16px,
+    )
+  );
+}
+
+a {
+  color: $fontColor;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+  &:hover {
+    color: shade($firstAccent, 25%);
+    text-decoration: underline;
+  }
+  &:focus {
+    outline: none;
+    outline-offset: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+blockquote {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  position: relative;
+  font-family: $heading-font-family;
+  font-style: italic;
+  &:before {
+    content: '\201C';
+    position: absolute;
+    top: -0.2em;
+    left: -0.2em;
+    color: darken($secondAccent, 7%);
+    font-size: 7em;
+    z-index: -1;
+  }
+}

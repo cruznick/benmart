@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Benmart`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Benjamin J. Martinez`,
+      summary: `DevOps developer @ KavaK.com`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Un lugar para mis cosas `,
+    siteUrl: `https://benmart.dev`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `cruznick_`,
     },
   },
   plugins: [
@@ -34,6 +34,9 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+
+              withWebp: true,
+              quality: 70,
             },
           },
           {
@@ -53,15 +56,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Benjamin J. Mart. - Personal Site -`,
+        short_name: `Benmart`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -70,14 +73,21 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        google: {
+          families: ['Libre Barskerville', 'Source Sans Pro'],
+        },
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-offline`,
   ],
 }

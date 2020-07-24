@@ -1,0 +1,37 @@
+/*
+  * Mixins
+  * Media queries
+  * Currently the site only support 2 views as the site is built from a mobile first approach
+  * is only one column for mobile site but when screen goes to 38em (around 610px) it
+  * becomes a 2 columns layout
+*/
+
+@mixin tablet-up {
+  @media only screen and (min-width: 38em) {
+    @content;
+  }
+}
+
+/*
+  * Slightly lighten a color
+  * @access public
+  * @param {Color} $color - color to tint
+  * @param {Number} $percentage - percentage of `$color` in returned color
+  * @return {Color}
+*/
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/*
+  * Slightly darken a color
+  * @access public
+  * @param {Color} $color - color to shade
+  * @param {Number} $percentage - percentage of `$color` in returned color
+  * @return {Color}
+*/
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
